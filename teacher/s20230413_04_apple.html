@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container-1 {
+            text-align: center;
+            background-color: black;
+            margin-bottom: 10px;
+        }
+
+        .container-2 {
+            text-align: center;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        .container-3 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .container-4 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .item {
+            padding: 10px;
+            flex-basis: 49%;
+        }
+
+        .container-4>.item {
+            padding: 10px;
+            flex-basis: 30%;
+        }
+
+        .container-4>.item>img {
+            width: 80%;
+        }
+
+        .container-map {
+            display: flex;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .map-1 {
+            width: 40%;
+            height: 400px;
+        }
+
+        .map-2 {
+            width: 60%;
+            padding-top: 200px;
+            font-size: 40px;
+        }
+
+        .container-youtube {
+            display: flex;
+            text-align: center;
+            /* background-color: blue; */
+        }
+
+        .youtube-1 {
+            padding-top: 50px;
+            width: 30%;
+            height: 400px;
+            /* background-color: azure; */
+        }
+
+        .youtube-2 {
+            width: 70%;
+            padding-top: 150px;
+            font-size: 40px;
+            /* background-color: aquamarine; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <img src="./images/p01.png" alt="">
+    </div>
+    <div class="container-2">
+        <img src="./images/p02.png" alt="">
+    </div>
+    <div class="container-3">
+        <div class="item">
+            <img src="./images/p03.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./images/p04.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <div class="item">
+            <img src="./images/p03.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./images/p04.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./images/p03.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-map">
+        <div class="map-1">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7020092413713!2d121.41690867602244!3d25.044184937880104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQz5paw5YyX5biC5rOw5bGx5Y2A6LK05a2Q6YeM6Ie06YGg5paw5p2RNTXkuYsx6Jmf5rOw5bGx6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1681369781703!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quidem ab aperiam accusamus cum reiciendis ea
+            odio. Id, cupiditate recusandae.
+        </div>
+    </div>
+    <div class="container-youtube">
+        <div class="youtube-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8NSmYKr8_J8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="youtube-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odit hic distinctio. Minima, dicta odio?
+        </div>
+    </div>
+</body>
+
+</html>

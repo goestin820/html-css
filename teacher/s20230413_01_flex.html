@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        .container-row{
+            display: flex;
+            
+            flex-direction: row;
+            /* 主要軸 */
+            justify-content: center; 
+            /* 次要軸 */
+            align-items: center;
+            height: 500px;
+            background-color: lightblue;
+        }
+        .container-column{
+            /* 同一種property 屬性 只可存在一個 */
+            /* ex height 1000px  height 2000px */
+            display: flex;
+            /* display: block;
+            display: inline;
+            display: inline-block; */
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 1000px;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+        .item{
+            text-align: center;
+            padding-top : 130px;
+            font-size: 60px;
+            width: 300px;
+            height: 300px;
+            background-color: #ccc;
+        }
+        .item-row{
+            margin-left: 10px;
+            color: red;
+        }
+        .item-column{
+            margin-bottom: 10px;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h3>flex row</h3>
+    <div class="container-row">
+        <div class="item item-row">
+            1
+        </div>
+        <div class="item item-row">
+            2
+        </div>
+        <div class="item item-row">
+            3
+        </div>
+    </div>
+
+    <hr>
+    <h3>flex column</h3>
+    <div class="container-column">
+        <div class="item item-column">
+            11
+        </div>
+        <div class="item item-column">
+            12
+        </div>
+        <div class="item item-column">
+            13
+        </div><div class="item item-column">
+            14
+        </div>
+        <div class="item item-column">
+            15
+        </div>
+        <div class="item item-column">
+            16
+        </div>
+    </div>
+
+    <!-- <table>
+        <tr>
+            <td width="15%"></td>
+            <td width="20%"></td>
+            <td></td>
+        </tr>
+    </table> -->
+</body>
+</html>

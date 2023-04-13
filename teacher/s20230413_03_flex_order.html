@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lightblue;
+            /* height: 90vh; */
+            justify-content: space-evenly;
+        }
+
+        .item {
+            margin-top: 20px;
+            background-color: #ccc;
+            flex-basis: 250px;
+            height: 250px;
+            text-align: center;
+        }
+
+        .item1,
+        .item2 {
+            padding-top: 20px;
+            color: red;
+            border: 1px solid black;
+            border-radius: 25px;
+        }
+
+        .item>img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .item3 {
+            padding-top: 50px;
+            color: green;
+            flex-basis: 500px;
+            /* border: 1px solid black; */
+        }
+
+        .item-title {
+            margin-bottom: 10px;
+            border: 0px;
+            font-size: 20px;
+            height: 30px;
+            padding-top: 0;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>點餐系統</h2>
+
+    <div class="container">
+        <div class="item item1 item-title">
+            <h3>主餐</h3>
+        </div>
+        <div class="item item2 item-title">
+            <h3>飲料</h3>
+        </div>
+        <div class="item item3 item-title">
+            <h3>推薦</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item item1">
+            <img src="https://picsum.photos/id/237/200/200" alt="">
+            <p>
+                排骨便當
+            </p>
+        </div>
+        <div class="item item2">
+            <img src="https://picsum.photos/id/238/200/200" alt="">
+            <p>
+                珍珠奶茶
+            </p>
+        </div>
+        <div class="item item3">
+            <h3>每日特餐</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, omnis!
+            </p>
+            <p>
+                <button type="button">下單</button>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item item1">
+            <img src="https://picsum.photos/id/242/200/300" alt="">
+            <p>
+                排骨便當
+            </p>            
+        </div>
+        <div class="item item2">
+            <img src="https://picsum.photos/id/243/200/300" alt="">
+            <p>
+                珍珠奶茶
+            </p>            
+        </div>
+        <div class="item item3">
+            <h3>每日特餐</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, omnis!
+            </p>
+            <p>
+                <button type="button">下單</button>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item item1">
+            <img src="https://picsum.photos/id/255/200/300" alt="">
+            <p>
+                排骨便當
+            </p>
+        </div>
+        <div class="item item2">
+            <img src="https://picsum.photos/id/266/200/300" alt="">
+            <p>
+                珍珠奶茶
+            </p>
+        </div>
+        <div class="item item3">
+            <h3>每日特餐</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, omnis!
+            </p>
+            <p>
+                <button type="button">下單</button>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

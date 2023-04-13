@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* width: 60%; */
+            /* height: 800px; */
+            /* margin: auto; */
+            background-color: lightcyan;
+        }
+
+        .item {
+            margin-top: 20px;
+            /* width: 250px; */
+            flex-basis: 250px;
+            height: 250px;
+            /* margin-left: 100px; */
+            /* margin-right: 25px;
+            /* margin-top: 5px; */
+            /* font-size: 30px; */
+            text-align: center;
+            color: lightcoral;
+            /* background-color: lightgoldenrodyellow; */
+        }
+
+        .item-1,
+        .item-2 {
+            padding-top: 20px;
+            color: red;
+            /* border: 1px solid black; */
+        }
+        .item-3 {
+            padding-top: 50px;
+            color: green;
+            /* line-height: 100px; */
+            flex-basis: 500px;
+        }
+
+        .item-title {
+            margin-bottom: 10px;
+            border: 0px;
+            font-size: 20px;
+            height: 30px;
+            padding-top: 0;
+            color: black;
+        }
+
+
+        img {
+            width: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>點餐系統</h1>
+
+    <div class="container">
+        <div class="item item-1 item-title">
+            <h3>餐點</h3>
+        </div>
+        <div class="item item-2 item-title">
+            <h3>飲料</h3>
+        </div>
+        <div class="item item-3 item-title">
+            <h3>餐點介紹</h3>
+        </div>
+    </div>
+    <div class="container container-1">
+        <div class="item item-1">
+            <img src="https://picsum.photos/id/230/100/100" alt="">
+            <p>排骨飯</p>
+        </div>
+        <div class="item item-2">
+            <img src="https://picsum.photos/id/231/100/100" alt="">
+            <p>紅茶</p>
+        </div>
+        <div class="item item-3">
+            <p>排骨飯+紅茶，美味的體驗</p>
+
+            <p>
+                <button type="button">下單</button>
+            </p>
+        </div>
+    </div>
+    <div class="container container-2">
+        <div class="item item-1">
+            <img src="https://picsum.photos/id/234/100/100" alt="">
+            <p>雞腿飯</p>
+        </div>
+        <div class="item item-2">
+            <img src="https://picsum.photos/id/235/100/100" alt="">
+            <p>綠茶</p>
+        </div>
+        <div class="item item-3">
+            <p>雞腿飯+綠茶，絕配的滋味</p>
+            <p>
+                <button type="button">下單</button>
+            </p>
+        </div>
+    </div>
+    <div class="container container-3">
+        <div class="item item-1">
+            <img src="https://picsum.photos/id/244/100/100" alt="">
+            <p>燒肉飯</p>
+        </div>
+        <div class="item item-2">
+            <img src="https://picsum.photos/id/239/100/100" alt="">
+            <p>青茶</p>
+        </div>
+        <div class="item item-3">
+            <p>燒肉飯+青茶，難忘的回味</p>
+            <p>
+                <button type="button">下單</button>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
