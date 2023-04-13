@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-div {
+            border: 1px solid red;
+            width: 80%;
+            height: 300px;
+            color: red;
+        }
+
+        /* > 子選擇器 找下一層  */
+        .my-div > p {
+            color: green
+        }
+        /* .my-div > p > div {
+            color: green
+        } */
+
+        /* 空格 後代子孫選擇器 找全部  */
+        /* .my-div p {
+            color: green
+        } */
+
+        /* + 相鄰兄弟選擇器*/
+        /* .my-div+p {
+            color: blue
+        } */
+
+        /* ~ 全體兄弟選擇器  */
+        /* .my-div~p {
+            color: blue
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="my-div">my-div
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.
+            <p>下一層Lorem ipsum dolor sit amet.
+                <p>
+                    下下一層Lorem ipsum dolor sit amet.
+                </p>
+            </p>
+        </p>
+    </div>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+</body>
+
+</html>

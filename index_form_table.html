@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            height: 40px;
+        }
+
+        table {
+            margin: auto;
+            width: 80%;
+        }
+
+        td {
+            /* width: 200px; */
+        }
+
+        input {
+            /* width: 90%; */
+            /* margin-left: 10px; */
+            /* padding: 1px; */
+        }
+        #sub{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <form action="">
+            <legend>表單欄位群組</legend>
+            <tr>
+                <td width="30%">name</td>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">age</td>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">mobile</td>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">興趣</td>
+                <td>
+                    <input type="checkbox" name="love[]" id="read">
+                    <label for="">閱讀</label>
+                    <input type="checkbox" name="love[]" id="bike">
+                    <label for="">自行車</label>
+                    <input type="checkbox" name="love[]" id="ball">
+                    <label for="">打球</label>
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">性別</td>
+                <td>
+                    <input type="radio" name="gender" id="" value="male">
+                    <label for="">男性</label>
+                    <input type="radio" name="gender" id="" value="female">
+                    <label for="">女性</label>
+                    <input type="radio" name="gender" id="" value="other">
+                    <label for="">其他</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="" id="sub" value="submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

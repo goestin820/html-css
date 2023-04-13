@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR人資管理系統</title>
+    <style>
+        fieldset {
+            width: 600px;
+            color: rgb(202, 109, 22);
+            background-color: rgb(244, 241, 180);
+        }
+        legend{
+            font-size:larger;
+            font-weight: 1000;
+        }
+        #location{
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form start -->
+    <form action="url" method="">
+        <fieldset>
+            <legend>HR人資管理系統</legend>
+            <p>
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="duty">職稱：</label>
+                <input type="duty" name="duty" id="duty">
+            </p>
+            <p>
+                <label for="">出生年月日</label>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label for="phone">手機號碼：</label>
+                <input type="number" name="phone" id="phone">
+            </p>
+            <p>
+                <label for="location">地址：</label>
+                <input type="text" name="location" id="location">
+            </p>
+            <p>
+                <label for="email">電子郵件：</label>
+                <input type="email" name="email" id="location">
+            </p>
+            <p>
+                <label for="class">學歷：</label>
+                <input type="text" name="class" id="class">
+            </p>
+            <label for="gender">性別：</label>
+            <input type="radio" name="gender" id="" value="male">
+            <label for="">男性</label>
+            <input type="radio" name="gender" id="" value="female">
+            <label for="">女性</label>
+            <input type="radio" name="gender" id="" value="other">
+            <label for="">其他</label>
+            <p>
+                <label for="expert">專長：</label>
+                <select name="front" id="">
+                    <option value="frontend">前端網頁</option>
+                    <option value="backend">後端資料庫</option>
+                    <option value="allend">前後端網頁資料庫</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">證照：</label>
+                <input type="checkbox" name="card[]" id="2">
+                <label for="">網頁設計乙級</label>
+                <input type="checkbox" name="card[]" id="3">
+                <label for="">網頁設計丙級</label>
+                <input type="checkbox" name="card[]" id="">
+                <label for="">Photoshop</label>
+                <input type="checkbox" name="card[]" id="">
+                <label for="">illustrator</label>
+            </p>
+            <p>
+                <label for="ps">備註：</label>
+                <textarea name="ps" id="" cols="60" rows="5"></textarea>
+            </p>
+            <p>
+                <label for="">個人照片：</label>
+                <input type="file" name="" id="">
+            </p>
+            <hr>
+            <p>
+                <input type="hidden" name="vip" id="vip" value="good">
+                <input type="reset" name="" id="" value="重設">
+                <input type="submit" name="" id="" value="送出">
+            </p>
+        </fieldset>
+    </form>
+    <!-- form end -->
+</body>
+
+</html>

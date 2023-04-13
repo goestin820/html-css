@@ -1,0 +1,14 @@
+/* div > p{
+  color:orange;
+}
+
+div + p{
+  color:rgb(38, 195, 54);
+} */
+
+div  p{
+  color:orange;
+}
+div > p{
+  background-color:blue;
+}

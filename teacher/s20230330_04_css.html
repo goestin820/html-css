@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 引用外部放上面 -->
+    <!-- 自己修改的 -->
+    <style>
+
+        /* simple 選擇器 */
+        /* ex. css p / #id / .class */
+        /* ex. html p / id / class */
+
+        p {
+            color: lightblue;
+            font-size: 40px;
+        }
+
+        div {
+            color: lightpink;
+        }
+
+        /* id # */
+        #p1{
+            color:blueviolet;
+        }
+
+
+        /* class . */
+        .p-class{
+            color: aquamarine;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- 1.Inline CSS -->
+    <h1 style="color:red">Hello css</h1>
+
+    <!-- 2.Internal CSS style css -->
+    <!-- head 內 -->
+    <!-- <p id="#p1"> 錯的html 不需要加 -->
+    <p id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quas.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quas.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quas.
+    </p>
+    <p class="p-class">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quas.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quas.
+    </p>
+
+    <!-- 3.External CSS  -->
+    <div class="p-class">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, voluptas?
+    </div>
+
+    <!-- html 註解 -->
+</body>
+
+</html>

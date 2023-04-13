@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #chinese {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>form</h1>
+
+    <!-- table 跟 form 都是不能再包一次同樣的東西 -->
+    <!-- table 可以包 form -->
+    <!-- form 可以包　table -->
+    <!-- input-attr name 表單 傳到 php 會顯示的東西  -->
+    <!-- input-attr id 國小名牌 只是方便找到他   -->
+    <!-- input-attr id name 不同的 但我們很懶 通常名字 -->
+    <!-- lable-attr for 我跟誰有關 id -->
+    <!-- form-attr action 我要去的網址 xxxx.php -->
+    <!-- form-attr method 我要顯示傳送的狀態 get 安全性低 透明盒子包裹 / post 安全性高 黑色盒子包裹-->
+
+    <!-- input / select / textarea  必須包在form tag 內-->
+
+    <!-- form start -->
+    <form action="url" method="">
+        <fieldset>
+            <legend>表單欄位群組</legend>
+            <p>
+                <!-- text 文字 -->
+                <label for="name">姓名</label>
+                <input type="text" name="name" id="name">
+            </p>
+
+            <p>
+                <!-- number 數字 -->
+                <label for="chinese">國文</label>
+                <input type="number" name="chinese" id="chinese">
+            </p>
+            <p>
+                <!-- password 密碼 -->
+                <label for="chinese">密碼</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <!-- radio 單選 送到php 只送一個gender name 三個都取一樣 -->
+                <!-- label 放在後面 -->
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">女</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">其他</label>
+            </p>
+            <p>
+                <!-- checkbox 多選 []陣列　array -->
+                <input type="checkbox" name="love[]" id="read">
+                <label for="read">閱讀</label>
+                <input type="checkbox" name="love[]" id="bike">
+                <label for="bike">自行車</label>
+                <input type="checkbox" name="love[]" id="ball">
+                <label for="ball">打球</label>
+            </p>
+
+            <p>
+                <!-- file 上傳檔案 -->
+                <input type="file" name="file" id="file">
+            </p>
+
+            <p>
+                <!-- date 日期 -->
+                <input type="date" name="date" id="date">
+            </p>
+
+            <p>
+                <!-- texarea 多行文字 留言板 -->
+                <textarea name="textarea" id="textarea" cols="50" rows="5">
+
+                </textarea>
+
+            </p>
+
+
+            <p>
+                <!-- select 下拉選單 -->
+                <!-- 1.select 不是input -->
+                <!-- 2.option 內容 -->
+                <!-- 3.html文字 不用 value相同 -->
+                <!--   實際傳到後端 phone=>value -->
+                <!--  phone => 1 -->
+                <label for="phone">手機品牌</label>
+                <select name="phone" id="phone">
+                    <option value="1">HTC</option>
+                    <option value="2">APPLE</option>
+                    <option value="3">ASUS</option>
+                </select>
+
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </p>
+        </fieldset>
+
+        <hr>
+
+        <p>
+
+            <!-- hidden 隱藏欄位-->
+            <input type="hidden" name="vip" id="vip" value="good">
+
+            <!-- submit 送出form表單 -->
+            <input type="submit" name="" id="" value="送出">
+
+            <!-- reset 重設表單 -->
+            <input type="reset" value="重設">
+        </p>
+
+    </form>
+    <!-- form end -->
+
+
+
+</body>
+
+</html>

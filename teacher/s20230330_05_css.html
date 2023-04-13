@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-div{
+            border: 1px solid red;
+            width: 80%;
+            height: 300px;
+            color: red;
+        }
+
+        /* > 子代選擇器 找一層 */
+        .my-div1 > p{
+            color: green;
+        }
+
+        .my-div2 > p{
+            color: blue;
+        }
+
+        /* 空格 後代選擇器 找全部 */
+        /*  */
+        /* .my-div  p{
+            color: blue;
+        } */
+
+        /* .my-div ~ p {
+            color:lightsalmon;
+        }    */
+
+
+        /* .my-div + p {
+            color:lightsalmon;
+        }    */
+
+
+        /* , 逗號 */
+
+        h1 , h2  , h3{
+            color: aqua;
+        }
+        /* h1{
+            color: aqua;
+        } */
+        /* h2{
+            color: aqua;
+        }
+
+        h3{
+            color: aqua;
+        } */
+
+    </style>
+</head>
+<body>
+    <p>
+        hello ex p
+    </p>
+    
+    <p>
+        hello ex p
+    </p>
+
+    <div class="my-div my-div1">
+        my-div
+        <p>
+            Lorem ipsum dolor sit amet.
+            <div>
+                <p>
+                    Lorem, ipsum dolor.
+                </p>
+            </div>
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <br>
+    <div class="my-div my-div2">
+        my-div
+        <p>
+            Lorem ipsum dolor sit amet.
+            <div>
+                <p>
+                    Lorem, ipsum dolor.
+                </p>
+            </div>
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+    <p>
+        hello ex p
+    </p>
+
+    <p>
+        hello ex p
+    </p>
+</body>
+</html>
