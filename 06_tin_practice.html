@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-row {
+            display: flex;
+            flex-direction: row;
+            background-color: lightgoldenrodyellow;
+            width: 100%;
+            /* margin: auto; */
+            /* height: 30vh; */
+            justify-content: space-around;
+            align-items: center;
+            /* border: 3px solid black; */
+            margin-bottom: 10px;
+        }
+
+        .row1 {
+            height: 35vh;
+            /* height: 35%; */
+        }
+
+        .row2 {
+            height: 100vh;
+            /* height: 50%; */
+        }
+
+        .row3 {
+            height: 35vh;
+            /* height: 35%; */
+        }
+
+        .item {
+            /* width: 300px; */
+            /* height: 200px; */
+            width: 25%;
+            height: 80%;
+            background-color: #ccc;
+        }
+
+        .item-21 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* height: 400px; */
+            width: 20%;
+            background-color: lightblue;
+        }
+
+        .item-211 {
+            width: 100px;
+            height: 100px;
+            /* flex-basis: 100px; */
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+
+        .item-22 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            /* width: 400px; */
+            width: 60%;
+            background-color: lightpink;
+        }
+
+        .item-221 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+
+        .item-23 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* width: 400px; */
+            width: 20%;
+            background-color: lightgreen;
+        }
+
+        .item-231 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container-row row1">
+        <div class="item item-11">11</div>
+        <div class="item item-12">12</div>
+        <div class="item item-13">13</div>
+    </div>
+    <div class="container-row row2">
+        <div class="item item-21">
+            <!-- 21 -->
+            <!-- column 三等份 -->
+            <div class="item item-211 ">211</div>
+            <div class="item item-211 ">212</div>
+            <div class="item item-211 ">213</div>
+        </div>
+        <div class="item item-22">
+            <!-- column 三等份 -->
+            <div class="item item-221">221</div>
+            <div class="item item-221">222</div>
+            <div class="item item-221">223</div>
+        </div>
+        <div class="item item-23">
+            <!-- 23 -->
+            <!-- column 三等份 -->
+            <div class="item item-231">231</div>
+            <div class="item item-231">232</div>
+            <div class="item item-231">233</div>
+        </div>
+    </div>
+    <div class="container-row row3">
+        <!-- 3 -->
+        <div class="item item-31">31</div>
+        <div class="item item-32">32</div>
+        <div class="item item-33">33</div>
+    </div>
+</body>
+
+</html>

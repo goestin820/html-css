@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* 在body flex */
+    display: flex;
+    width: 1024px;
+    padding: 0 12px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+/* top */
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+    border:1px solid black;
+    border-bottom: 0px;
+}
+
+/* aside */
+.aside{
+    flex-basis: 215px ;
+    height: calc(768px - 65px - 20px);
+    border:1px solid black;
+    border-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.aside>.menu{
+    /* height: calc(100% - 25px);    */
+    flex-basis: calc(100% - 25px);
+    border: 1px solid red;
+}
+.aside>.update{
+    /* height: 25px; */
+    flex-basis: 25px;
+    border: 1px solid red;
+}
+
+
+/* section */
+.section{
+    flex-basis: calc(100% - 215px);
+    border:1px solid black;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.section>.marquee{
+    /* height: 29px; */
+    flex-basis: 29px;
+    border: 1px solid blue;
+}
+
+.section>.content{
+    /* height: calc(100% - 29px); */
+    flex-basis: calc(100% - 29px);   
+    border: 1px solid blue;
+
+}
+
+
+/* footer */
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    border:1px solid black;
+    border-top: 0px;
+}

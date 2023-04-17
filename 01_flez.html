@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-row {
+            display: flex;
+            background-color: lightblue;
+            height: 100vh;
+            /* height: 100px; */
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+
+        }
+
+        .item {
+            flex-basis: 300px;
+            height: 300px;
+            background-color: #ccc;
+        }
+
+        .row2 {
+            justify-content: space-around;
+            background-color: lightyellow;
+        }
+
+        .row3 {
+            justify-content: space-evenly;
+            background-color: lightseagreen;
+        }
+
+        .row4 {
+            justify-content: center;
+            background-color: #ccc;
+        }
+
+        .item1{
+            background-color: aquamarine;
+        }
+        .item2{
+            background-color: lightpink;
+        }
+        .item3{
+            background-color: lightcyan;
+        }
+        .item4{
+            background-color: khaki;
+        }
+        .item5 {
+            background-color: lightcoral;
+        }
+
+        .row4{
+            background-color: #ccc;
+        }
+
+        .item41 {
+            background-color: lightpink;
+            flex-basis: 50%;
+            height: 100vh;
+            /* height: 500px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .item42 {
+            background-color: aquamarine;
+            flex-basis: 80%;
+            height: 100vh;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .inner-column-411,.inner-column-412,.inner-column-413{
+            flex-basis: 300px;
+            width: 300px;
+            background-color: lightyellow;
+        }
+
+        .inner-row-421,.inner-row-422,.inner-row-423{
+            flex-basis: 300px;
+            /* flex-basis 權重比較大 */
+            /* width: 500px; */
+            height: 300px;
+            background-color: lightcyan;
+        }
+        .inner-row-421{
+            align-self: flex-start;
+        }
+
+        .inner-row-423{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-row">
+        <div class="item item1">
+            1
+        </div>
+    </div>
+    <div class="container-row row2">
+        <div class="item item2">
+            2
+        </div>
+        <div class="item item3">
+            3
+        </div>
+    </div>
+    <div class="container-row row3">
+        <div class="item item4">
+            4
+        </div>
+        <div class="item item5">
+            5
+        </div>
+        <div class="item item6">
+            6
+        </div>
+    </div>
+    <div class="container-row row4">
+        <div class="item item41">
+            <!-- width 20% -->
+            <!-- 41 -->
+            <div class="inner-column-411">411</div>
+            <div class="inner-column-412">412</div>
+            <div class="inner-column-413">413</div>
+        </div>
+        <div class="item item42">
+            <!-- width 80% -->
+            <!-- 42 -->
+            <div class="inner-row-421">421</div>
+            <div class="inner-row-422">422</div>
+            <div class="inner-row-423">423</div>
+        </div>
+    </div>
+
+</html>

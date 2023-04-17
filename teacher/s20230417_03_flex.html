@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cotainer-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: lightblue;
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+
+        .row1 {
+            height: 20vh;
+        }
+
+        .row2 {
+            /* height: 50vh; */
+            height: 100vh;
+        }
+
+        .row3 {
+            height: 20vh;
+        }
+
+        .item {
+            background-color: #ccc;
+            width: 25%;
+            height: 80%;
+            /* height: 300px; */
+
+        }
+
+        .item21 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aquamarine;
+
+            flex-basis: 20%;
+        }
+
+        .item22 {
+            flex-basis: 60%;
+            background-color: lightcoral;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .item23 {
+            flex-basis: 20%;
+            background-color: lightpink;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .item211,
+        .item212,
+        .item213 {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+
+        .item221,
+        .item222,
+        .item223 {
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;
+        }
+
+        .item231,
+        .item232,
+        .item233 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cotainer-row row1">
+        <!-- 1 -->
+        <div class="item item11">
+            11
+        </div>
+        <div class="item item12">
+            12
+        </div>
+        <div class="item item13">
+            13
+        </div>
+    </div>
+    <div class="cotainer-row row2">
+        <!-- 2 -->
+        <div class="item item21">
+            <!-- 21 -->
+            <!-- column 三等份 -->
+            <div class="item item211">
+                211
+            </div>
+            <div class="item item212">
+                212
+            </div>
+            <div class="item item213">
+                213
+            </div>
+        </div>
+        <div class="item item22">
+            <!-- column 三等份 -->
+            <div class="item item221">
+                221
+            </div>
+            <div class="item item222">
+                222
+            </div>
+            <div class="item item223">
+                223
+            </div>
+        </div>
+        <div class="item item23">
+            <!-- 23 -->
+            <!-- column 三等份 -->
+            <div class="item item231">
+                231
+            </div>
+            <div class="item item232">
+                232
+            </div>
+            <div class="item item233">
+                233
+            </div>
+        </div>
+    </div>
+    <div class="cotainer-row row3">
+        <!-- 3 -->
+        <div class="item item31">
+            31
+        </div>
+        <div class="item item32">
+            32
+        </div>
+        <div class="item item33">
+            33
+        </div>
+    </div>
+</body>
+
+</html>
