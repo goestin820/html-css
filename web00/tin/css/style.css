@@ -27,15 +27,15 @@ body{
 /* aside */
 .aside{
     flex-basis: 215px ;
+    /* width: 215px; */
     height: calc(768px - 65px - 20px);
     border:1px solid black;
     border-right: 0px;
-    background-color: rgb(246, 203, 210);
+    background-color: rgb(249, 210, 216);
 
     display: flex;
     flex-direction: column;
     /* justify-content:space-between; */
-
 }
 .aside>.menu{
     /* height: calc(100% - 25px);    */
@@ -52,6 +52,7 @@ body{
 /* section */
 .section{
     flex-basis: calc(100% - 215px);
+    /* width: calc(100% - 215px); */
     border:1px solid black;
     background-color: lightcyan;
     
@@ -70,7 +71,6 @@ body{
     /* height: calc(100% - 29px); */
     flex-basis: calc(100% - 29px);   
     /* border: 1px solid blue; */
-
 }
 
 
