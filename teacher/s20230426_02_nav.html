@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        .container {
+            background-color: white;
+            height: 80vh;
+            /* width: 960px; */
+            width: 70%;
+            border: 10px double black;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .logo {
+            /* background-color: lightblue; */
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logo>img {
+            /* width 用百分比 container(上一層) */
+            /* width: 100px; */
+            width: 15%;
+        }
+
+        .photo {
+            /* background-color: lightgreen; */
+            margin-top: 10px;
+            text-align: center;
+
+        }
+
+        .photo>img {
+            width: 70%;
+        }
+
+        .text {
+            margin: 0 auto;
+            width: 70%;
+            padding: 30px;
+        }
+        nav{
+            border-top: 3px solid black;
+            border-bottom: 1px solid black;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        nav>ul {
+            text-transform: uppercase;
+            /* margin: 0 auto; */
+            text-align: center;
+            background-color: lightskyblue;
+        }
+
+        li {
+            display: inline;
+        }
+
+        a {
+            /* margin-right: 100px; */
+            margin:20px;
+            /* background-color: lightpink; */
+            width: 100px;
+            height: 100px;
+            text-decoration: none;
+        }
+        a:hover{
+            /* background-color: aquamarine; */
+            color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">For Sale</a></li>
+                <li><a href="">Repairs</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="photo">
+            <img src="./images/content.png" alt="">
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nemo error reiciendis nihil rem expedita
+            architecto quaerat ex perspiciatis accusamus, eveniet ducimus repellendus nesciunt eos optio ad dicta
+            distinctio delectus?
+        </div>
+    </div>
+</body>
+
+</html>
