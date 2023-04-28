@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <!-- float -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .box {
+            float: left;
+            height: 30vh;
+            /* height: 300px; */
+            background-color: lightblue;
+            /* margin-right:30px; */
+            background-size: cover;
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+        }
+
+        .col-1 {
+            width: calc(100% / 12 * 1);
+        }
+
+        .col-2 {
+            width: calc(100% / 12 * 2);
+        }
+
+        .col-3 {
+            width: calc(100% / 12 * 3 );
+        }
+
+        .col-4 {
+            width: calc(100% / 12 * 4 );
+        }
+
+        .col-5 {
+            width: calc(100% / 12 * 5 );
+        }
+
+        .col-6 {
+            width: calc(100% / 12 * 6 );
+        }
+
+        .col-7 {
+            width: calc(100% / 12 * 7 );
+        }
+
+        .col-8 {
+            width: calc(100% / 12 * 8 );
+        }
+
+        .col-9 {
+            width: calc(100% / 12 * 9 );
+        }
+
+        .col-10 {
+            width: calc(100% / 12 * 10);
+        }
+
+        .col-11 {
+            width: calc(100% / 12 * 11);
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+        
+
+        /* row-1 */
+        .box11 {
+            height: 70vh;
+            padding-top: 30px;
+            background-color: aquamarine;
+            background-image: url("https://picsum.photos/id/240/400/300");
+        }
+
+        .box12 {
+            height: 70vh;
+            float: right;
+            background-color: lightslategrey;
+            background-image: url("https://picsum.photos/id/241/400/300");
+        }
+
+        .box13 {
+            height: 70vh;
+            float: right;
+            background-color: lightslategrey;
+            background-image: url("https://picsum.photos/id/243/400/300");
+        }
+
+        /* row-2 */
+        .box21 {
+            background-color: lightseagreen;
+            background-image: url("https://picsum.photos/id/261/200/300");
+        }
+
+        .box22 {
+            background-color: lightgray;
+            background-image: url("https://picsum.photos/id/272/200/300");
+        }
+
+        .box23 {
+            background-color: lightyellow;
+            background-image: url("https://picsum.photos/id/263/200/300");
+        }
+
+        /* row-3 */
+        .box31 {
+            /* height: 100px; */
+            height: 8vh;
+            padding: 30px;
+            background-color: lightpink;
+        }
+
+        div>a {
+            display: block;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- table vs container-->
+    <!-- tr vs row -->
+    <!-- td vs col -->
+    
+    <div class="container">
+        <div class="row-1">
+            <div class="box box11 col-4">
+
+            </div>
+            <div class="box box12 col-4">
+
+            </div>
+            <div class="box box13 col-4">
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+
+        <div class="row-2">
+            <div class="box box21 col-4">
+
+            </div>
+            <div class="box box22 col-4">
+
+            </div>
+            <div class="box box23 col-4">
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
