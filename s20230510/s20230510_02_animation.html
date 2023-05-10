@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: test;
+  animation-duration: 10s;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: test;
+  animation-duration: 3s;
+}
+
+/* form 0% */
+/* to 100% */
+
+/* @keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+} */
+
+@keyframes test {
+  0% {background-color: red;}
+  50% {background-color: green;}
+  100% {background-color: blue;}
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div class="box1"></div>
+<br>
+<div class="box2"></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+
