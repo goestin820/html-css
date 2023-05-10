@@ -36,9 +36,13 @@
         // mobileText = document.getElementById('mobile').value = "0911-111-111";
 
         // get
+
+        // 綁定 綁定id
+        // 透過id 整個tag被我抓到
         let nameText = document.getElementById('name');
         let mobileText = document.getElementById('mobile');
         let myBtn = document.getElementById('myBtn');
+        let result = document.getElementById('result');
 
         function myFun() {
             let nameTextValue = nameText.value;
@@ -46,6 +50,7 @@
             console.log('Hello myFun');
             console.log(nameTextValue);
             console.log(mobileTextValue);
+            result.innerText = `您好 選的是 ${nameTextValue} ${mobileTextValue}`;
         }
 
         // 宣告 沒有變數 function
