@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        /* 電腦 */
+        body {
+            background-color: lightpink;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .box {
+            width: 30%;
+            height: 300px;
+            background-color: lightgoldenrodyellow;
+            font-size: 20px;
+        }
+
+        /* 手機 */
+        /* 條件達到 max-width : 600 */
+        /* 600以下 */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 80%;
+                margin-bottom: 20px;
+                font-size: 28px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    media queries
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti tempore voluptatem magnam
+            nesciunt autem assumenda magni tempora fugit neque qui eligendi iusto accusamus, adipisci nihil? Voluptates,
+            labore, maxime necessitatibus officiis fugit ex unde alias minima quisquam maiores, ipsum aperiam a porro
+            dicta esse? Cum porro non, quisquam modi officia repellendus expedita tempore earum similique rem facere
+            molestias ducimus nulla voluptates qui optio blanditiis dolores quia laborum veritatis iure sequi, inventore
+            dolorum? Minima aut, libero consectetur eum accusamus incidunt? Culpa sapiente tenetur iure debitis nobis
+            at, maiores atque maxime veritatis voluptates architecto esse voluptas aut nam harum dolore recusandae, cum
+            magni?</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti tempore voluptatem magnam
+            nesciunt autem assumenda magni tempora fugit neque qui eligendi iusto accusamus, adipisci nihil? Voluptates,
+            labore, maxime necessitatibus officiis fugit ex unde alias minima quisquam maiores, ipsum aperiam a porro
+            dicta esse? Cum porro non, quisquam modi officia repellendus expedita tempore earum similique rem facere
+            molestias ducimus nulla voluptates qui optio blanditiis dolores quia laborum veritatis iure sequi, inventore
+            dolorum? Minima aut, libero consectetur eum accusamus incidunt? Culpa sapiente tenetur iure debitis nobis
+            at, maiores atque maxime veritatis voluptates architecto esse voluptas aut nam harum dolore recusandae, cum
+            magni?</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti tempore voluptatem magnam
+            nesciunt autem assumenda magni tempora fugit neque qui eligendi iusto accusamus, adipisci nihil? Voluptates,
+            labore, maxime necessitatibus officiis fugit ex unde alias minima quisquam maiores, ipsum aperiam a porro
+            dicta esse? Cum porro non, quisquam modi officia repellendus expedita tempore earum similique rem facere
+            molestias ducimus nulla voluptates qui optio blanditiis dolores quia laborum veritatis iure sequi, inventore
+            dolorum? Minima aut, libero consectetur eum accusamus incidunt? Culpa sapiente tenetur iure debitis nobis
+            at, maiores atque maxime veritatis voluptates architecto esse voluptas aut nam harum dolore recusandae, cum
+            magni?</div>
+    </div>
+</body>
+
+</html>
