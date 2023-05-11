@@ -36,6 +36,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="row">
             <label for="num1">num1</label>
@@ -50,6 +51,7 @@
             <button type="button" id="myBtn" onclick="myBtnFun();">計算加總</button>
         </div>
     </div>
+
     <div class="container">
         <div id="tip">
             請輸入兩個數字 計算加總
@@ -88,6 +90,11 @@
             // console.log('hello myBtnFun');
             let num1Value = num1.value;
             let num2Value = num2.value;
+            if (num1Value.length < 1 || num2Value.length < 1) {
+                alert('input error');
+                // 跳出 myBtnFun
+                return false;
+            }
             // console.log('num1Value', num1Value);
             // console.log('num1Value type =>', typeof (num1Value));
             // console.log('num2Value', num2Value);
@@ -132,7 +139,7 @@
         // result.style.display = 'block';
 
         //全部關閉
-        initFun();  
+        initFun();
         tip.style.display = 'block';
 
 
