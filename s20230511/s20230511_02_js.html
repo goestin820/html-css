@@ -46,6 +46,7 @@
             <input type="text" id="num2">
         </div>
         <div class="row">
+            <button type="button" id="myBtn" onclick="resetFun();">Reset</button>
             <button type="button" id="myBtn" onclick="myBtnFun();">計算加總</button>
         </div>
     </div>
@@ -62,14 +63,35 @@
 
     <script>
         //function
+        function initFun() {
+            tip.style.display = 'none';
+            result.style.display = 'none';
+        }
+        function clearInput() {
+            num1.value = '';
+            num2.value = '';
+
+        }
+
+        function resetFun() {
+            console.log('resetFun ok');
+            // window.location.reload();
+            // 關閉 init
+            initFun();
+            tip.style.display = 'block';
+            clearInput();
+
+        }
+
         function myBtnFun() {
+
             // console.log('hello myBtnFun');
             let num1Value = num1.value;
             let num2Value = num2.value;
-            console.log('num1Value', num1Value);
-            console.log('num1Value type =>', typeof (num1Value));
-            console.log('num2Value', num2Value);
-            console.log('num2Value type =>', typeof (num2Value));
+            // console.log('num1Value', num1Value);
+            // console.log('num1Value type =>', typeof (num1Value));
+            // console.log('num2Value', num2Value);
+            // console.log('num2Value type =>', typeof (num2Value));
 
             // 抓input
             // 如果要計算 全部直接Number 轉型
@@ -81,7 +103,7 @@
             // result.innerText = '55688';
             result.innerText = resultValue;
 
-            tip.style.display = 'none';
+            initFun();
             result.style.display = 'block';
 
 
@@ -97,7 +119,7 @@
         // 進入function
         // 1. onclick html tag 直接進入
         // 2. myBtn.addEventListener
-      
+
 
         console.log('num1', num1);
         console.log('num2', num2);
@@ -105,9 +127,13 @@
         console.log('myBtn', myBtn);
 
         // 2.動作
-        
+
+        // result.style.display = 'none';
+        // result.style.display = 'block';
+
+        //全部關閉
+        initFun();  
         tip.style.display = 'block';
-        result.style.display = 'none';
 
 
 
