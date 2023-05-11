@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <label for="good1">商品1:</label>
+        <input type="number" id="good1" value="">
+    </p>
+    <p>
+        <label for="good2">商品2:</label>
+        <input type="number" id="good2" value="">
+    </p>
+    <p>
+        <button type="button" id="myBtn" onclick="myFun()">加總</button>
+    </p>
+    <hr>
+
+    <P id="result">
+        <!-- 結果是..... -->
+
+    </P>
+
+    <script>
+        let good1Num = document.getElementById('good1');
+        let good2Num = document.getElementById('good2');
+        let myBtn = document.getElementById('myBtn');
+        let result = document.getElementById('result');
+
+        function myFun() {
+            let good1NumValue = good1Num.value;
+            let good2NumValue = good2Num.value;
+            let sumValue = Number(good1NumValue) + Number(good2NumValue);
+            console.log('Hello myFun');
+            console.log(good1NumValue);
+            console.log(good2NumValue);
+            console.log(sumValue);
+
+            // console.log(result);
+            result.innerText = `合計金額:${sumValue}`;
+
+            // let result = `您選的姓名:${nameTextValue} 手機號碼:${mobileTextValue}`;
+            // document.getElementById('result').innerText = result;
+            // console.log(result);        
+        }
+    </script>
+</body>
+
+</html>

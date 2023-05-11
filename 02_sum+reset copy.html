@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* margin:auto; */
+            text-align: center;
+            margin-bottom: 30px;
+            /* background-color: lightblue;*/
+        }
+
+        .row {
+            margin-bottom: 30px;
+        }
+
+        #tip {
+            color: red;
+            /* display預設值為bolck，可省略不寫*/
+            /* display: block; */
+        }
+
+        #result {
+            color: green;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <label for="num1">num1</label>
+            <input type="number" id="num1">
+        </div>
+        <div class="row">
+            <label for="num2">num2</label>
+            <input type="text" id="num2">
+        </div>
+        <div class="row">
+            <button type="button" id="myBtn" onclick="myBtnFun()">計算加總</button>
+        </div>
+        <div class="row">
+            <button type="button" id="reSet" onclick="reSetFun()">重設</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="tip">
+            請輸入兩個數字 計算加總
+        </div>
+    </div>
+    <div class="container">
+        <div id="result">
+            加總結果
+        </div>
+    </div>
+
+    <script>
+        // 1.綁定
+        let num1 = document.getElementById('num1');
+        let num2 = document.getElementById('num2');
+        let tip = document.getElementById('tip');
+        let result = document.getElementById('result');
+        let myBtn = document.getElementById('myBtn');
+        let reSet = document.getElementById('reSet');
+
+        console.log('num1', num1);
+        console.log('num2', num2);
+        console.log('tip', tip);
+        console.log('myBtn', myBtn);
+        console.log('reSet', reSet);
+
+        //function
+        function initFun(){
+            tip.style.display = 'none';
+            result.style.display = 'none';
+        }
+
+        function clearInput(){
+            num1.value = '';
+            num2.value = '';    
+            // document.getElementById('num1').value="";
+            // document.getElementById('num2').value="";
+        }
+        
+        function myBtnFun() {
+            // console.log('hello myBtnFun');
+            let num1Value = num1.value;
+            let num2Value = num2.value;
+            if (num1Value.length<1 || num2Value.length<1){
+                alert('input error');
+                // 跳出 myBtnFun
+                return false
+            }
+            console.log('num1Value', num1Value);
+            console.log('num1Value type =>', typeof (num1Value));
+            console.log('num2Value', num2Value);
+            console.log('num2Value type =>', typeof (num2Value));
+
+            // 讀取input的id
+            // 如果數字要計算 直接用Number()轉型
+            // parseInt()轉型整數
+            // parseFloat()轉型浮點數
+            // typeof()判斷變數
+            let resultValue = Number(num1Value) + Number(num2Value);
+            console.log(resultValue);
+            console.log('resultValue type =>', typeof (resultValue));
+
+            result.innerText = `合計:${resultValue}`;
+
+            initFun();
+            result.style.display = 'block';
+        }
+
+        function reSetFun(){
+            // console.log('resetFun ok');
+            //清空tip、result
+            initFun();
+            //顯示tip
+            tip.style.display = 'block';
+            //清空num1、num2值
+            clearInput();
+        }
+
+        // 2.動作
+        // tip.style.display = 'block';
+        // result.style.display = 'none';
+        
+        //3.結果
+
+
+
+    </script>
+</body>
+
+</html>
