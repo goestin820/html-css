@@ -28,6 +28,7 @@
         }
 
         #result {
+            font-size: 48px;
             color: green;
             display: none;
         }
@@ -77,6 +78,12 @@
             let resultValue = Number(num1Value) + Number(num2Value);
             console.log(resultValue);
             console.log('resultValue type =>', typeof (resultValue));
+            // result.innerText = '55688';
+            result.innerText = resultValue;
+
+            tip.style.display = 'none';
+            result.style.display = 'block';
+
 
         }
 
@@ -87,14 +94,21 @@
         let result = document.getElementById('result');
         let myBtn = document.getElementById('myBtn');
 
+        // 進入function
+        // 1. onclick html tag 直接進入
+        // 2. myBtn.addEventListener
+      
+
         console.log('num1', num1);
         console.log('num2', num2);
         console.log('tip', tip);
         console.log('myBtn', myBtn);
 
         // 2.動作
+        
         tip.style.display = 'block';
-        result.style.display = 'block';
+        result.style.display = 'none';
+
 
 
     </script>
